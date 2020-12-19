@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:free_commerce/signin_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,33 +9,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "My APP",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("My Home Screen"),
-        ),
-        body: Container(
-          child: Row(
-            children: [
-              Container(
-                padding: EdgeInsets.all(20.0),
-                child: Text("Test"),
-                color: Colors.red,
-                width: 100.0,
-                height: 100.0,
-              ),
-              Container(
-                margin: EdgeInsets.all(20.0),
-                color: Colors.green,
-                width: 60.0,
-                height: 60.0,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+    return MaterialApp(title: "My APP", home: SignInScreen());
   }
 }
 
