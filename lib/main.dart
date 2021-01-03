@@ -1,15 +1,43 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:free_commerce/signin_screen.dart';
+import 'package:free_commerce/home_screen.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool initDone = false;
+
+  @override
+  void initState() {
+    doInit();
+
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "My APP", home: SignInScreen());
+    if (initDone)
+      return MaterialApp(
+          title: "My APP",
+          theme: ThemeData(primarySwatch: Colors.green),
+          home: HomeScreen());
+    else
+      return Center(child: CircularProgressIndicator());
+  }
+
+  void doInit() async {
+    await Firebase.initializeApp();
+    setState(() {
+      initDone = true;
+    });
   }
 }
 

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "36057413086",
+    "project_id": "opencommerce-d5170",
+    "storage_bucket": "opencommerce-d5170.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36057413086:android:7dd74ed6fc4214cb6b994f",
+        "android_client_info": {
+          "package_name": "com.arindam.free_commerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36057413086-n3sk5knag35hm8p0f7d0fgfgjnq3qh7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arindam.free_commerce",
+            "certificate_hash": "cff239a1df1e4616a427c990f0a56f6334086f71"
+          }
+        },
+        {
+          "client_id": "36057413086-q26d3p7797hjv2d8d7c8b614o3qj63as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEDd_r8FqNwwpYJ8bksARZmQtQzLfZ5Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36057413086-q26d3p7797hjv2d8d7c8b614o3qj63as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
